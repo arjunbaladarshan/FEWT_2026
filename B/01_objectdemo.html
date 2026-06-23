@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function abc(n1, n2) {
+        add = n1 + n2;
+        sub = n1 - n2;
+        mul = n1 * n2;
+        div = n1 / n2;
+        sq = n1 * n1;
+        mix = { add, sub, mul, div, something: sq };
+        return mix;
+      }
+
+      ans = abc(10, 3);
+      console.log(ans);
+      document.write("Addition = " + ans.add + "<br/>");
+      document.write("Substraction = " + ans.sub + "<br/>");
+      document.write("Multiplication = " + ans.mul + "<br/>");
+      document.write("Division = " + ans.div + "<br/>");
+    </script>
+  </body>
+</html>
