@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function abc(n1, n2) {
+        add = n1 + n2;
+        sub = n1 - n2;
+        mul = n1 * n2;
+        div = n1 / n2;
+        sq = n1 * n1;
+        ans = { add, sub, mul, div, square: sq };
+        return ans;
+      }
+      gamete = abc(10, 12);
+      console.log(gamete);
+      document.write("addition = " + gamete.add + "<br/>");
+      document.write("substraction = " + gamete.sub);
+    </script>
+  </body>
+</html>
