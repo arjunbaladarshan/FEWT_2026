@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      d = new Date();
+      document.write("Object = " + d + "<br/>");
+      document.write("Date = " + d.getDate() + "<br/>");
+      document.write("Month = " + d.getMonth() + "<br/>");
+      document.write("Year = " + d.getYear() + "<br/>");
+      document.write("Full Year = " + d.getFullYear() + "<br/>");
+      document.write("Time = " + d.getTime() + "<br/>");
+
+      document.write("===================================<br/>");
+
+      dOld = new Date(2025, 5, 1);
+      document.write("Object = " + dOld + "<br/>");
+      document.write("Date = " + dOld.getDate() + "<br/>");
+      document.write("Month = " + dOld.getMonth() + "<br/>");
+      document.write("Year = " + dOld.getYear() + "<br/>");
+      document.write("Full Year = " + dOld.getFullYear() + "<br/>");
+      document.write("Time = " + dOld.getTime() + "<br/>");
+
+      document.write("===================================<br/>");
+
+      dDiffMs = d.getTime() - dOld.getTime();
+      dDiff = Math.round(dDiffMs / 1000 / 60 / 60 / 24);
+
+      document.write("Diffrence = " + dDiff);
+    </script>
+  </body>
+</html>
