@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function displaySeperator(seperator, n) {
+        for (i = 0; i < n; i++) {
+          document.write(seperator);
+        }
+        document.write("<br/>");
+      }
+      d = new Date();
+      document.write("Full = " + d + "<br/>");
+      document.write("Date = " + d.getDate() + "<br/>");
+      document.write("Month = " + d.getMonth() + "<br/>");
+      document.write("Year = " + d.getYear() + "<br/>");
+      document.write("Full Year = " + d.getFullYear() + "<br/>");
+      document.write("Time = " + d.getTime() + "<br/>");
+
+      displaySeperator("%", 20);
+
+      dOld = new Date(2025, 5, 2);
+      document.write("Full = " + dOld + "<br/>");
+      document.write("Date = " + dOld.getDate() + "<br/>");
+      document.write("Month = " + dOld.getMonth() + "<br/>");
+      document.write("Year = " + dOld.getYear() + "<br/>");
+      document.write("Full Year = " + dOld.getFullYear() + "<br/>");
+      document.write("Time = " + dOld.getTime() + "<br/>");
+
+      displaySeperator("%", 20);
+
+      dDiffMs = d - dOld;
+      dDiffS = dDiffMs / 1000;
+      dDiffM = dDiffS / 60;
+      dDiffH = dDiffM / 60;
+      dDiffD = Math.round(dDiffH / 24);
+      document.write("Date Diff = " + dDiffD + "<br/>");
+
+      displaySeperator("%", 20);
+    </script>
+  </body>
+</html>

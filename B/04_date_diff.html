@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      dPrev = new Date();
+      for (i = 0; i < 1000000000; i++) {
+        // document.write("-");
+      }
+      dLast = new Date();
+      document.write("completed in " + (dLast - dPrev) + " ms");
+    </script>
+  </body>
+</html>
