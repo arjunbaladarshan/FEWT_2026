@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="myTxt" />
+    <button onclick="checkData()">Click</button>
+    <input type="text" id="result" />
+    <script>
+      function checkData() {
+        txt1 = document.getElementById("myTxt");
+        txt2 = document.getElementById("result");
+
+        pattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+        re = new RegExp(pattern);
+        if (re.test(txt1.value)) {
+          txt2.value = "Valid";
+        } else {
+          txt2.value = "Invalid";
+        }
+      }
+    </script>
+  </body>
+</html>

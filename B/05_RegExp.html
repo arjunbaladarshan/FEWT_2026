@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="pattern" /><br />
+    <input type="text" id="myTxt" />
+    <button onclick="checkData()">Click</button>
+    <input type="text" id="answer" />
+    <script>
+      function checkData() {
+        txt1 = document.getElementById("myTxt");
+        txt2 = document.getElementById("answer");
+        txt3 = document.getElementById("pattern");
+        temp = txt1.value;
+
+        patten = txt3.value;
+        re = new RegExp(patten);
+        if (re.test(temp)) {
+          txt2.value = "Valid";
+        } else {
+          txt2.value = "Invalid";
+        }
+      }
+    </script>
+  </body>
+</html>
